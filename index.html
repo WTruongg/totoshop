@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+    <title>homepage</title>
+    <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+
+<body>
+    <!-- to top -->
+    <div id="to-top" class="to-top">
+        <i class="bi bi-chevron-up"></i>
+    </div>
+    <!-- -------- header ----------- -->
+    <header>
+        <nav id="nav__mobile">
+            <ul>
+                <li>
+                    <i class="bi bi-list" id="menuBtn"></i>
+                </li>
+                <li>
+                    <a href="index.html" class="logo">
+                        <img src="./assets/imgs/logo.jpg" alt="">
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class="bi bi-search" id="serachBtn"></i>
+                    </a>
+                    <a href="#" class="cartBtn">
+                        <i class="bi bi-handbag">
+                        </i>
+                        <span class="cart-quantity">0</span>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+        <nav id="nav__page">
+            <div class="nav__page--header">
+                <div class="logo">
+                    <a href="index.html">
+                        <img src="./assets/imgs/logo.jpg" alt="">
+                    </a>
+                    <div class="user">
+                        <i class="bi bi-person-circle"></i>
+                        <i class="bi bi-heart"></i>
+                        <i class="bi bi-search"></i>
+                        <a href="#" class="cartBtn">
+                            <i class="bi bi-handbag">
+                            </i>
+                            <span class="cart-quantity">0</span>
+                        </a>
+                    </div>
+                    <i class="bi bi-x" id="removeNav"></i>
+                </div>
+            </div>
+            <ul>
+                <li>
+                    <a href="#">
+                        new arrival
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        áo khoác
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        đồ nam
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        đồ nữ
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        phụ kiện
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        ưu đãi hot
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        chính sách
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        toto fanzone
+                    </a>
+                </li>
+            </ul>
+            <div class="phone-contact">
+                <i class="bi bi-telephone-fill"></i>
+                <span>1900 633 501</span>
+            </div>
+            <div class="icons">
+                <i class="bi bi-facebook"></i>
+                <i class="bi bi-twitter"></i>
+                <i class="bi bi-instagram"></i>
+                <i class="bi bi-youtube"></i>
+            </div>
+        </nav>
+    </header>
+    <!-- -------- end header ----------- -->
+    <div id="hero">
+        <!-- -------- slider  ---------- -->
+        <div class="slider">
+            <img src="./assets/imgs/slider1.jpg" alt="" id="slide-img">
+        </div>
+        <!-- -------- end slider ---------- -->
+        <!-- -------- banner ----------- -->
+        <div class="banner">
+            <div class="banner__top">
+                <div>
+                    <img src="./assets/imgs/banner1.jpg" alt="">
+                </div>
+                <div>
+                    <img src="./assets/imgs/banner2.jpg" alt="">
+                </div>
+            </div>
+            <div class="banner__bot">
+                <img src="./assets/imgs/newjacket.jpg" alt="" class="gallery1 gallery--item">
+                <img src="./assets/imgs/backpack.jpg" alt="" class="gallery2 gallery--item">
+                <img src="./assets/imgs/slingbag.jpg" alt="" class="gallery3 gallery--item">
+                <img src="./assets/imgs/cap.jpg" alt="" class="gallery4 gallery--item">
+                <img src="./assets/imgs/belt.jpg" alt="" class="gallery5 gallery--item">
+            </div>
+        </div>
+        <!-- -------- end banner ----------- -->
+        <!-- content -->
+        <div id="content">
+            <!-- title-content -->
+            <div class="content__title">
+                <h3>
+                    new arrivals
+                </h3>
+                <span class="line-title">
+                    <i class="bi bi-circle"></i>
+                </span>
+            </div>
+            <!-- list products -->
+            <div class="list-width">
+                <div class="products">
+                    <!-- render in here -->
+                </div>
+                <!-- banner arrivals -->
+                <div class="banner-arrivals" style="margin: 4rem 0">
+                    <img src="./assets/imgs/bannerarrivals.jpg" alt="" width="100%">
+                </div>
+
+            </div>
+        </div>
+        <!-- news -->
+        <div class="content__title">
+            <h3>
+                tin tức mỗi ngày
+            </h3>
+            <span class="line-title">
+                <i class="bi bi-circle"></i>
+            </span>
+        </div>
+        <div class="news">
+            <div class="news__slider">
+                <div class="news__slide">
+                    <div class="news__slide--imgs">
+                        <img src="./assets/imgs/newslide1.jpg" alt="">
+                        <img src="./assets/imgs/newslide2.jpg" alt="">
+                        <img src="./assets/imgs/newslide3.jpg" alt="">
+                        <img src="./assets/imgs/newslide4.jpg" alt="">
+                    </div>
+                    <div class="news__slide--btn">
+                        <i class="bi bi-chevron-compact-left left" onclick="side_slide(-1)"></i>
+                        <i class="bi bi-chevron-compact-right right" onclick="side_slide(1)"></i>
+                    </div>
+                </div>
+
+            </div>
+            <div class="news__post">
+                <h3 class="news__post--heading">
+                    bài viết xem nhiều
+                </h3>
+                <div class="news__post--list">
+                    <div class="post">
+                        <div class="post-img">
+                            <img src="./assets/imgs/post1.jpg" alt="">
+                        </div>
+                        <div class="post-info">
+                            <h3 class="post-title">
+                                happy big game member day - toto tung hoành
+                            </h3>
+                            <p class="post-date">
+                                05-05-2020
+                            </p>
+                            <p class="post-promotion">
+                                tin khuyến mãi
+                            </p>
+                        </div>
+                    </div>
+                    <div class="post">
+                        <div class="post-img">
+                            <img src="./assets/imgs/post2.jpg" alt="">
+                        </div>
+                        <div class="post-info">
+                            <h3 class="post-title">
+                                ĐẠI LỄ TOTO CÓ “GAME VUI QUÀ HỜI
+                            </h3>
+                            <p class="post-date">
+                                22-04-2022
+                            </p>
+                            <p class="post-promotion">
+                                tin khuyến mãi
+                            </p>
+                        </div>
+                    </div>
+                    <div class="post">
+                        <div class="post-img">
+                            <img src="./assets/imgs/post3.jpg" alt="">
+                        </div>
+                        <div class="post-info">
+                            <h3 class="post-title">
+                                NHỮNG CHIẾC TÚI NHỎ MANG TÌNH YÊU
+                            </h3>
+                            <p class="post-date">
+                                19-01-2022
+                            </p>
+                            <p class="post-promotion">
+                                TIN TỨC-THỜI TRANG
+                            </p>
+                        </div>
+                    </div>
+                    <div class="post">
+                        <div class="post-img">
+                            <img src="./assets/imgs/post4.jpg" alt="">
+                        </div>
+                        <div class="post-info">
+                            <h3 class="post-title">
+                                CÙNG TOTO ĐỔI ÁO KHOÁC GỬI TRAO HƠI Ấm
+                            </h3>
+                            <p class="post-date">
+                                19-01-2022
+                            </p>
+                            <p class="post-promotion">
+                                CHÍNH SÁCH THÀNH VIÊN
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="btn-readmore">
+            <button><span><i class="bi bi-arrow-repeat"></i></span><a href="#">Xem thêm nhiều tin khác</a></button>
+        </div>
+        <!-- video youtube -->
+        <div class="video-youtube">
+            <iframe width="100%" height="500" src="https://www.youtube.com/embed/_JgMCoppKHg"
+                title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen></iframe>
+        </div>
+        <div class="content__title">
+            <h3>
+                hệ thống cửa hàng
+            </h3>
+            <span class="line-title">
+                <i class="bi bi-circle"></i>
+            </span>
+        </div>
+        <!-- hệ thống cửa hàng -->
+        <div class="address">
+            <img src="./assets/imgs/hethongcuahang.jpg" alt="">
+            <button>địa chỉ hệ thống cửa hàng</button>
+        </div>
+    </div>
+    <footer>
+        <div class="footer-widgets">
+            <div class="col">
+                <h5>mua hàng trực tuyến</h5>
+                <p class="footer__phone--contact">
+                    0938.803.633
+                </p>
+                <p class="footer__phone--contact">
+                    1900.633.501
+                </p>
+                <p>sale.online@totoshop.vn</p>
+            </div>
+            <div class="col">
+                <h5>hotline góp ý</h5>
+                <p class="footer__phone--contact">
+                    1900.633.501
+                </p>
+                <p>cskh@totoshop.vn</p>
+            </div>
+            <div class="col">
+                <h4>
+                    thông tin
+                </h4>
+                <p>
+                    giới thiệu
+                </p>
+                <p>liên hệ công ty</p>
+                <p>đối tác</p>
+                <p class="tuyendung">tuyển dụng</p>
+            </div>
+            <div class="col">
+                <h4>chính sách</h4>
+                <p>chính sách đổi hàng</p>
+                <p>chính sách bảo hành</p>
+                <p>chính sách bảo mật</p>
+                <p>chính sách hoàn tiền</p>
+            </div>
+            <div class="col">
+                <h4>FAQ</h4>
+                <p>thanh toán và vận chuyển</p>
+                <p>hướng dẫn chọn size</p>
+                <p>kiểm tra thông tin đơn hàng</p>
+                <p>câu hỏi thường gặp</p>
+            </div>
+        </div>
+        <div class="footer-form">
+            <div class="form-register">
+                <form action="">
+                    <h1>Đăng kí nhận khuyến mãi</h1>
+                    <input type="text" placeholder="Nhập email của bạn">
+                    <button>gửi</button>
+                </form>
+            </div>
+            <div class="form-search">
+                <form action="">
+                    <h1>Tra cứu đơn hàng của bạn
+                    </h1>
+                    <input type="text" placeholder="Nhập email của bạn">
+                    <button>tìm</button>
+                </form>
+            </div>
+            <div class="feedback">
+                <span class="envelope-icon"><i class="bi bi-envelope"></i></span> <span>Góp ý/ Than phiền</span>
+            </div>
+        </div>
+        <hr>
+        <p>CÔNG TY TNHH SXTM & DV TOTO GROUP</p>
+        <p>Địa chỉ: 304 - 306 Nguyễn Trãi, P.8, Q.5, TPHCM/ Điện thoại: 0938803633/DKKD số: 41C8013053 cấp ngày
+            01/12/2010, nơi cấp UBND Quận 3</p>
+    </footer>
+
+
+</body>
+
+</html>
+<script src="./assets/css/main.js"></script>
